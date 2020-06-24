@@ -79,7 +79,7 @@ class Form
         $Validator = new Validation($validation, $data);
 
         if ($Validator->validate()) {
-            $res(0, '', ['nama' => 123]);
+            $res(0, '',$data);
         } else {
             $res(1, $Validator->errors, []);
         }
